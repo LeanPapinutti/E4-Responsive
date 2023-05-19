@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier Prime', monospace;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+   background-color: #000000;
+    padding: 1rem;
+    box-shadow: 0 8px 24px rgb(0, 0, 0, 0.2);
+    gap: 150px;
+    position: fixed;
+    top: 0;
+}
+
+ul a{
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+}
+
+.div1{
+display: flex;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.brand img{
+    width: 75px;
+    height: 75px;
+}
+
+.cart-icon {
+    border-radius: 10px;
+    height: 30px;
+    padding: 5px 10px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+main {
+    background-color: rgb(197, 197, 197);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 100%;
+}
+
+#hero{
+    margin-top: 65px;
+    padding: 70px 0px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.hero-info h1{
+font-size: 48px;
+width: 80%;
+min-width: 500px;
+font-weight: 800;
+color: black;
+}
+
+.hero .hero-info p{
+    font-size: 14px;
+    width: 70%;
+    color: grey;
+}
+
+.hero-info p> strong {
+    font-weight: 800;
+}
+
+.hero-info a {
+    color: rgb(0, 0, 0);
+    background-color: antiquewhite;
+    width: 250px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.hero-card {
+    width: 800px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+#descripción {
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    width: 98%;
+    height: 200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    text-align: center;
+}
+
+#info {
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.info-card-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-card {
+    width: 300px;
+    height: 290px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #dddddd, #aac1c9, #89a9b8);
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.info-card img {
+    width: 60px;
+}
+
+.info-card h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.info-card p {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    background-color: rgb(197, 197, 197);
+    color: #000000;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
+    padding: 60px 0;
+}
+
+footer a,
+footer p {
+    color: #000000;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    background-color:rgb(0, 0, 0); 
+}
+
+.contacto-contenedor{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 15px;
+  padding: 20px;
+  color: white;
+}
+
+.titulo-contacto{
+    font-weight: 400;
+  font-size: 30px; 
+}
+
+.contacto-contenedor ul {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 15px;
+}
+
+.contacto-contenedor li {
+    display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.contacto-contenedor a {
+    display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 992px) {
+.hero-card{
+    width: 450px;
+}
+ 
+}
+
+@media (max-width:768px) {
+.hero-info h1 {
+    font-size: 30px;
+    width: 70%;
+    min-width: 300px;
+    font-weight: 600;
+}
+
+.hero-card{
+    width: 300px;
+}
+
+.cart-icon{
+    margin-right: 3rem;
+}
+
+.brand img{
+    margin-left: 2rem;
+}
+}
+
+
